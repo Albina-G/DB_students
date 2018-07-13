@@ -1,0 +1,84 @@
+.addNew {
+    width: 100%;
+    height: 100%;
+    background: #0000009a;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNew__popap {
+    background: #fff;
+    width: 375px;
+    height: max-content;
+    box-sizing: border-box;
+}
+
+.addNew__form {
+    margin: 16px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    outline: none;
+    margin: 16px 0;
+}
+
+.addNew__firstName__input,
+.addNew__lastName__input {
+    width: 100%;
+}
+
+.addNew__name-field {
+    font-size: 14px;
+    font-family: «Roboto», sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: #25343a;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+}
+
+.addNew__form__submit {
+    height: 36px;
+    position: relative;
+  
+    display: block;
+    padding: 0 16px;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    
+    background: #f9aa33;
+    color: #000;
+}
+
+@media (max-width: 375px) {
+    .addNew {
+        background: #fff;
+    }
+
+    .addNew__popap {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .addNew__form {
+      margin: 16px 24px;
+    }
+}
