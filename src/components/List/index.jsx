@@ -5,6 +5,7 @@ import { observable, action } from 'mobx';
 import StudentsStore from '../../stores/students-store';
 import SortStore from '../../stores/sort-store';
 import UIStore from '../../stores/ui-store';
+import ChoiseSort from '../ChoiseSort/index.jsx';
 import ItemList from './ItemList.jsx';
 import './List.css';
 
@@ -35,17 +36,7 @@ class List extends Component {
     return (
       <div className='list'>
         <div className='list__choiseSort'>
-          { UIStore.isShowTypeList ?
-            <div className='choiseSort__typeList'>
-              {SortStore.sortingTypes.map(sort =>
-                <div key={sort.code} className='choiseSort__typeItem'
-                  onClick={this.choiseTypeSort.bind(this, sort)}
-                >
-                  {sort.name}
-                </div>)}
-            </div>
-            : ''
-          }
+          { UIStore.isShowTypeList ? <ChoiseSort/> : '' }
           <div className='choiseSort__type' onClick={this.toogleTypeList}>{SortStore.sortBy.name}</div>
           <div className='choiseSort__order' onClick={this.choiseOrder}>
             { SortStore.order ?

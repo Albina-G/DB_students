@@ -51,27 +51,6 @@
   background: rgba(0, 0, 0, .2);
 }
 
-.choiseSort__typeList {
-  width: 168px;
-  position: absolute;
-  top: 50px;
-  right: 52px;
-  padding: 8px 16px;
-  background: #fff;
-  z-index: 9;
-  box-shadow: 0 2px 4px rgba(0,0,0,.3);
-  font-size: 14px;
-  font-weight: 500;
-  box-sizing: border-box;
-}
-
-.choiseSort__typeItem {
-  height: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .order__up {
   background: url('./arrow-up.svg') no-repeat;
   width: 24px;
